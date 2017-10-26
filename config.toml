@@ -1,3 +1,5 @@
 baseURL = "https://www.slickteam.fr/"
 languageCode = "fr-fr"
 title = "Slickteam - Come as you geek !"
+
+theme = "slickteam"
