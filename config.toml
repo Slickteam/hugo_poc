@@ -7,3 +7,13 @@ theme = "slickteam"
 
 [params]
   logo = "slickteam-logo.png"
+
+  # Social networks links (Fill the ones you want)
+  [params.social]
+    facebook = "https://www.facebook.com/Slickteam-869111176525294/"
+    twitter = "https://twitter.com/SlickteamFR"
+    linkedin = "https://www.linkedin.com/company-beta/11041917/"
+    medium = "http://blog.slickteam.fr/"
+    youtube = ""
+    instagram = ""
+    github = "https://github.com/Slickteam"
