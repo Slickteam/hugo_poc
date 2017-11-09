@@ -4,3 +4,6 @@ languageCode = "fr-fr"
 title = "Slickteam - Come as you geek !"
 
 theme = "slickteam"
+
+[params]
+  logo = "slickteam-logo.png"
