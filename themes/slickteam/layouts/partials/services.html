@@ -1,18 +1,20 @@
 <section>
     {{ with .Site.Params.services.title }}
-        <h2>{{ . }}</h2>
+    <h2>{{ . }}</h2>
     {{ end }}
 
     {{ with .Site.Params.services.headline }}
-        <p>{{ . }}</p>
+    <p>{{ . }}</p>
     {{ end }}
 
     <div>
-        {{ range .Site.Params.services.list }}
+    {{ range .Site.Params.services.list }}
+        <div>
             <h3>{{ .title }}</h3>
             {{ with .description }}
-                <p>{{ . }}</p>
+            <p>{{ . }}</p>
             {{ end }}
-        {{ end }}
+        </div>
+    {{ end }}
     </div>
 </section>
