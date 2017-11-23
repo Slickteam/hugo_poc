@@ -1,0 +1,18 @@
+<section>
+    {{ with .Site.Params.services.title }}
+        <h2>{{ . }}</h2>
+    {{ end }}
+
+    {{ with .Site.Params.services.headline }}
+        <p>{{ . }}</p>
+    {{ end }}
+
+    <div>
+        {{ range .Site.Params.services.list }}
+            <h3>{{ .title }}</h3>
+            {{ with .description }}
+                <p>{{ . }}</p>
+            {{ end }}
+        {{ end }}
+    </div>
+</section>

@@ -73,42 +73,9 @@
             </div>
         </section>
 
-        <section>
-            <h2>Slickteam Jobs</h2>
-
-            <div>
-                <h3>l&#8217;IOTeam needs you !</h3>
-                <p>
-                    Intégrer Slickteam c'est avoir du temps pour geeker et progresser.<br/>
-                    Intervenir sur la chaîne M2M et surtout sur les objets connectés c'est possible !
-                </p>
-            </div>
-
-            <div>
-                <h3>La Slickteam Mobile a besoin d&#8217;aide !</h3>
-                <p>
-                    Le dev mobile est une passion et tu veux rejoindre une entreprise où tu peux geeker et continuer à progresser, tu es au bon endroit !<br>
-                    Slickteam : du temps dédié à faire de la R&D.
-                </p>
-            </div>
-
-            <div>
-                <h3>La Slickteam oo recrute !</h3>
-                <p>
-                    Progresser et rester au top, cela t’intéresse ?<br/>
-                    Slickteam : du temps dédié à faire de la R&D : geeker, se former et progresser pour être affuté(e).<br/>
-                    Tu souhaites mettre à profit ton expérience en dev, viens nous rencontrer.
-                </p>
-            </div>
-
-            <div>
-                <h3>Rejoins la Slickteam Front !</h3>
-                <p>
-                    Envie d’une nouvelle aventure web ?<br/>
-                    Faire du dev front et continuer à geeker et à progresser, tu es au bon endroit !
-                </p>
-            </div>
-        </section>
+        {{ if .Site.Params.services.list }}
+            {{ partial "services.html" . }}
+        {{ end }}
 
         <section>
             <h2>Rencontrez-nous</h2>
