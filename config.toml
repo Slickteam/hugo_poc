@@ -17,27 +17,3 @@ theme = "slickteam"
     youtube = ""
     instagram = ""
     github = "https://github.com/Slickteam"
-
-  [params.services]
-    title = "Slickteam Jobs"
-    headline = "Nos offres en cours"
-
-    [[params.services.list]]
-      image = ""
-      title = "L'IOTeam needs you !"
-      description = "Intégrer Slickteam c'est avoir du temps pour geeker et progresser. Intervenir sur la chaîne M2M et surtout sur les objets connectés c'est possible !"
-
-    [[params.services.list]]
-      image = ""
-      title = "La Slickteam Mobile a besoin d'aide"
-      description = "Le dev mobile est une passion et tu veux rejoindre une entreprise où tu peux geeker et continuer à progresser, tu es au bon endroit ! Slickteam : du temps dédié à faire de la R&D."
-
-    [[params.services.list]]
-      image = ""
-      title = "La Slickteam OO recrute"
-      description = "Progresser et rester au top, cela t’intéresse ? Slickteam : du temps dédié à faire de la R&D : geeker, se former et progresser pour être affuté(e). Tu souhaites mettre à profit ton expérience en dev, viens nous rencontrer."
-
-    [[params.services.list]]
-      image = ""
-      title = "Rejoins la Slickteam Front"
-      description = "Envie d’une nouvelle aventure web ? Faire du dev front et continuer à geeker et à progresser, tu es au bon endroit !"

@@ -1,20 +1,13 @@
 <section>
-    {{ with .Site.Params.services.title }}
-    <h2>{{ . }}</h2>
+    <h2>Slickteam Jobs</h2>
+    <p>Nos offres en cours</p>
+    {{ range where .Data.Pages "Section" "job" }}
+        <article>
+            <header>
+                <h3><a href='{{ .Permalink }}'> {{ .Title }}</a> </h3>
+                <div></div>
+            </header>
+            {{ .Params.summarize }}
+        </article>
     {{ end }}
-
-    {{ with .Site.Params.services.headline }}
-    <p>{{ . }}</p>
-    {{ end }}
-
-    <div>
-    {{ range .Site.Params.services.list }}
-        <div>
-            <h3>{{ .title }}</h3>
-            {{ with .description }}
-            <p>{{ . }}</p>
-            {{ end }}
-        </div>
-    {{ end }}
-    </div>
 </section>

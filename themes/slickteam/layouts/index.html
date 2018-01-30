@@ -1,122 +1,105 @@
-<!DOCTYPE html>
-<html lang="{{ .Site.Language.Lang }}">
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        {{ with .Site.Params.name }}<meta name="author" content="{{ . }}">{{ end }}
-        {{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
+{{ define "main" }}
+    <section>
+        <div>
+            <span>Slickteam [slikti:m] n. f. Equipe agile et astucieuse capable de réussir vos projets digitaux</span>
+        </div>
 
-        <title>{{ .Site.Title }}</title>
-    </head>
+        <div>
+            <span>Incubateur de Dev&#8217; Talent</span>
+        </div>
 
-    <body>
-        {{ partial "header.html" . }}
+        <div>
+            <span>Slickteam &#8211; Come As You Geek</span>
+        </div>
+    </section>
 
-        <section>
-            <div>
-                <span>Slickteam [slikti:m] n. f. Equipe agile et astucieuse capable de réussir vos projets digitaux</span>
-            </div>
+    <section>
+        <div>
+            <h3>Expertise</h3>
+            <p><strong>Notre expertise au service de nos clients sur trois domaines :</strong><br>Développement &#8211; Front &amp; Back<br>Applications mobiles<br>IOT</p>
+        </div>
 
-            <div>
-                <span>Incubateur de Dev&#8217; Talent</span>
-            </div>
+        <div>
+            <h3>Formation</h3>
+            <p><strong>Accompagner et former pour la réussite des projets digitaux</strong><br>Formations techniques (JS, jQuery, Angular 1 &amp; 2, React, Php, Java, Node)<br>Formations théoriques (be Agile, TDD)</p>
+        </div>
 
-            <div>
-                <span>Slickteam &#8211; Come As You Geek</span>
-            </div>
-        </section>
+        <div>
+            <h3>Lab</h3>
+            <p><strong>C&#8217;est la R&#038;D réalisée par la Slickteam. Nous testons, développons des projets innovants.</strong><br>Chaque membre de la team dispose du temps pour contribuer à la R&#038;D.</p>
+        </div>
+    </section>
 
-        <section>
-            <div>
-                <h3>Expertise</h3>
-                <p><strong>Notre expertise au service de nos clients sur trois domaines :</strong><br>Développement &#8211; Front &amp; Back<br>Applications mobiles<br>IOT</p>
-            </div>
+    <section>
+        <h2>Pourquoi Slickteam ?</h2>
 
-            <div>
-                <h3>Formation</h3>
-                <p><strong>Accompagner et former pour la réussite des projets digitaux</strong><br>Formations techniques (JS, jQuery, Angular 1 &amp; 2, React, Php, Java, Node)<br>Formations théoriques (be Agile, TDD)</p>
-            </div>
+        <div>
+            <h3>People first</h3>
+            <p>L'Homme est au coeur de chaque décision. Tu as des idées, on s'adapte !</p>
+        </div>
 
-            <div>
-                <h3>Lab</h3>
-                <p><strong>C&#8217;est la R&#038;D réalisée par la Slickteam. Nous testons, développons des projets innovants.</strong><br>Chaque membre de la team dispose du temps pour contribuer à la R&#038;D.</p>
-            </div>
-        </section>
+        <div>
+            <h3>Techno-centric</h3>
+            <p>
+                Des passionnés de nouvelles techno qui ont le goût des choses bien faites sur 3 activités :
+                le dev applicatif, le mobile et l'IoT.
+            </p>
+        </div>
 
-        <section>
-            <h2>Pourquoi Slickteam ?</h2>
+        <div>
+            <h3>Geeking days</h3>
+            <p>
+                2x/mois - On se réunit tous 2x par mois pour faire de la R&amp;D et incuber ses idées
+                pour innover. C’est l’occasion de se maintenir au top en faisant de la veille ou 
+                en participant à des formations.
+            </p>
+        </div>
 
-            <div>
-                <h3>People first</h3>
-                <p>L'Homme est au coeur de chaque décision. Tu as des idées, on s'adapte !</p>
-            </div>
+        <div>
+            <h3>Fun</h3>
+            <p>Participation au Fun made by Slickteam et aux événements de la communauté Tech bretonne.</p>
+        </div>
+    </section>
 
-            <div>
-                <h3>Techno-centric</h3>
-                <p>
-                    Des passionnés de nouvelles techno qui ont le goût des choses bien faites sur 3 activités :
-                    le dev applicatif, le mobile et l'IoT.
-                </p>
-            </div>
+    {{ partial "services.html" . }}
 
-            <div>
-                <h3>Geeking days</h3>
-                <p>
-                    2x/mois - On se réunit tous 2x par mois pour faire de la R&amp;D et incuber ses idées
-                    pour innover. C’est l’occasion de se maintenir au top en faisant de la veille ou 
-                    en participant à des formations.
-                </p>
-            </div>
+    <section>
+        <h2>Rencontrez-nous</h2>
+        <p>Des experts à votre service</p>
 
-            <div>
-                <h3>Fun</h3>
-                <p>Participation au Fun made by Slickteam et aux événements de la communauté Tech bretonne.</p>
-            </div>
-        </section>
+        <div>
+            <h4>Laurent Cochet</h4>
+            <span>Co Founder</span>
+            <a href="https://www.facebook.com/Slickteam-869111176525294/">Facebook</a>
+            <a href="https://twitter.com/SlickteamFR">Twitter</a>
+            <a href="https://fr.linkedin.com/in/laurent-cochet-a473a962">LinkedIn</a>
+        </div>
 
-        {{ if .Site.Params.services.list }}
-            {{ partial "services.html" . }}
-        {{ end }}
+        <div>
+            <h4>Pierre Couety</h4>
+            <span>Co Founder</span>
+            <a href="https://www.facebook.com/Slickteam-869111176525294/">Facebook</a>
+            <a href="https://twitter.com/SlickteamFR">Twitter</a>
+            <a href="https://fr.linkedin.com/in/pierre-couety-058565b6">LinkedIn</a>
+        </div>  
+    </section>
 
-        <section>
-            <h2>Rencontrez-nous</h2>
-            <p>Des experts à votre service</p>
+    <section>
+        <h2>Slickteam en chiffres</h2>
+        <p>Des chiffres qui nous ressemblent :</p>
+        1583 cafés
+        840 post-it
+        234 workshops
+        528 heures de musique en travaillant
+    </section>
 
-            <div>
-                <h4>Laurent Cochet</h4>
-                <span>Co Founder</span>
-                <a href="https://www.facebook.com/Slickteam-869111176525294/">Facebook</a>
-                <a href="https://twitter.com/SlickteamFR">Twitter</a>
-                <a href="https://fr.linkedin.com/in/laurent-cochet-a473a962">LinkedIn</a>
-            </div>
-
-            <div>
-                <h4>Pierre Couety</h4>
-                <span>Co Founder</span>
-                <a href="https://www.facebook.com/Slickteam-869111176525294/">Facebook</a>
-                <a href="https://twitter.com/SlickteamFR">Twitter</a>
-                <a href="https://fr.linkedin.com/in/pierre-couety-058565b6">LinkedIn</a>
-            </div>  
-        </section>
-
-        <section>
-            <h2>Slickteam en chiffres</h2>
-            <p>Des chiffres qui nous ressemblent :</p>
-            1583 cafés
-            840 post-it
-            234 workshops
-            528 heures de musique en travaillant
-        </section>
-
-        <section>
-            <h2>Contactez nous</h2>
-            <div>Map</div>
-            <div>
-                1, square René Cassin, Rennes
-                <a href="tel:+33672477578">+33 6 72 47 75 78</a>
-                <a href="contact@slickteam.fr">contact@slickteam.fr</a>
-            </div>
-        </section>
-
-        {{ partial "footer.html" . }}
-    </body>
-</html>
+    <section>
+        <h2>Contactez nous</h2>
+        <div>Map</div>
+        <div>
+            1, square René Cassin, Rennes
+            <a href="tel:+33672477578">+33 6 72 47 75 78</a>
+            <a href="contact@slickteam.fr">contact@slickteam.fr</a>
+        </div>
+    </section>
+{{ end }}
