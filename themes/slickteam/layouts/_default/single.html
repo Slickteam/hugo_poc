@@ -1,4 +1,28 @@
 {{ define "main" }}
-    <h1>{{ .Title }}</h1>
-    {{ .Content }}
+    <section min-height: 100px; margin: 0; -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; border:  0; left: 0; background: #fff;>
+        <div class="hs-slide">
+            <img src="http://slickteam.fr/wp-content/uploads/2017/02/code-recrut.png">
+        </div>
+    </section>
+
+    <header class="hs-main-header">
+        <div class="hs-container">
+            <h1 class="hs-main-title">{{ .Title }}</h1>
+        </div>
+    </header><!-- .entry-header -->
+        
+    <div class="hs-container">
+        <div id="primary" class="content-area">
+            <main id="main" class="site-main" role="main">    
+                <article id="post-417" class="post-417 post type-post status-publish format-standard has-post-thumbnail hentry category-non-classe">
+                    <div class="entry-content">
+                        {{ .Content }}
+                    </div><!-- .entry-content -->
+                </article><!-- #post-## -->
+            </main><!-- #main -->
+        </div><!-- #primary -->
+    
+        <div id="secondary" class="widget-area">
+        </div><!-- #secondary -->
+    </div>
 {{ end }}

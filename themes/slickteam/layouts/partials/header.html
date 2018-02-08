@@ -1,14 +1,22 @@
-<header>
-    <h1><img src="images/{{ .Site.Params.logo }}"> Slickteam</h1>
-    <p>Come as you geek !</p>
+<header id="hs-masthead" class="hs-site-header hs-clearfix hs-black">
+    <div class="hs-container">
+        <div id="hs-site-branding">
+            <a href="https://slickteam.fr/" class="custom-logo-link" rel="home" itemprop="url"><img width="250" height="74" src="images/{{ .Site.Params.logo }}" class="custom-logo" alt="" itemprop="logo" /></a>
+        </div><!-- .site-branding -->
 
-    <ul>
-        {{ with .Site.Params.social.facebook }}<li><a href="{{ . }}">Facebook</a></li>{{ end }}
-        {{ with .Site.Params.social.twitter }}<li><a href="{{ . }}">Twitter</a></li>{{ end }}
-        {{ with .Site.Params.social.linkedin }}<li><a href="{{ . }}">LinkedIn</a></li>{{ end }}
-        {{ with .Site.Params.social.medium }}<li><a href="{{ . }}">Medium</a></li>{{ end }}
-        {{ with .Site.Params.social.github }}<li><a href="{{ . }}">GitHub</a></li>{{ end }}
-        {{ with .Site.Params.social.instagram }}<li><a href="{{ . }}">Instagram</a></li>{{ end }}
-        {{ with .Site.Params.social.youtube }}<li><a href="{{ . }}">Youtube</a></li>{{ end }}
-    </ul>
-</header>
+        <nav id="hs-site-navigation" >
+            <!--<div class="hs-toggle-menu"><span></span></div>-->
+        </nav><!-- #hs-site-navigation -->
+        <div class="hs-social" align="right">
+            {{ with .Site.Params.social.facebook }}<a class="sq-facebook" href="{{ . }}"><i class="fa fa-facebook"></i></a>{{ end }}
+            {{ with .Site.Params.social.twitter }}<a class="sq-twitter" href="{{ . }}"><i class="fa fa-twitter"></i></a>{{ end }}
+            {{ with .Site.Params.social.linkedin }}<a class="sq-linkedin" href="{{ . }}"><i class="fa fa-linkedin"></i></a>{{ end }}
+            {{ with .Site.Params.social.medium }}<a class="sq-blog" href="{{ . }}"><i class="fa fa-medium"></i></a>{{ end }}
+            {{ with .Site.Params.social.github }}<a href="{{ . }}"><i class="fa fa-github"></i></a>{{ end }}
+            {{ with .Site.Params.social.instagram }}<a href="{{ . }}"><i class="fa fa-instagram"></i></a>{{ end }}
+            {{ with .Site.Params.social.youtube }}<a href="{{ . }}"><i class="fa fa-youtube"></i></a>{{ end }}
+        </div>
+    </div>
+</header><!-- #hs-masthead -->
+
+<div id="hs-content" class="hs-site-content hs-clearfix">
