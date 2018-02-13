@@ -1,7 +1,7 @@
 ---
 date: 2017-04-09T10:58:08-04:00
 title: La Slickteam Mobile a besoin d’aide !
-summarize: "Le dev mobile est une passion et tu veux rejoindre une entreprise où tu peux geeker et continuer à progresser, tu es au bon endroit ! Slickteam : du temps dédié à faire de la R&D."
+abstract: "Le dev mobile est une passion et tu veux rejoindre une entreprise où tu peux geeker et continuer à progresser, tu es au bon endroit ! Slickteam : du temps dédié à faire de la R&D."
 ---
 
 **Progresser et rester au top, cela t’intéresse ?**
