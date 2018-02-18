@@ -1,22 +1,26 @@
 <section id="hs-blog-section" class="hs-section">
     <div class="hs-container">
         <h2 class="hs-section-title-white wow fadeInUp" data-wow-duration="0.5s">Slickteam Jobs</h2>
-        <div class="hs-section-tagline-white wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.5s">Nos offres en cours</div>
+        {{ if .Site.GetPage "Section" "job" }}
+            <div class="hs-section-tagline-white wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.5s">Nos offres en cours</div>
 
-        <div class="hs-blog-wrap hs-clearfix">
-        {{ range where .Data.Pages "Section" "job" }}
-            <div class="hs-blog-post hs-clearfix wow hs-left-img fadeInLeft" data-wow-duration="0.5s" data-wow-delay="600ms">
-                <div class="hs-blog-thumbnail" style='background-image:url(https://slickteam.fr/wp-content/uploads/2017/02/JobIoT-550x500.png);'>
-                    <a href="{{ .Permalink }}">
-                        <img alt="portfolio thumb" src="https://slickteam.fr/wp-content/themes/hashone/images/portfolio-thumb.png"/>
-                    </a>
-                </div>
+            <div class="hs-blog-wrap hs-clearfix">
+            {{ range where .Site.GetPage "Section" "job" }}
+                <div class="hs-blog-post hs-clearfix wow hs-left-img fadeInLeft" data-wow-duration="0.5s" data-wow-delay="600ms">
+                    <div class="hs-blog-thumbnail" style='background-image:url(https://slickteam.fr/wp-content/uploads/2017/02/JobIoT-550x500.png);'>
+                        <a href="{{ .Permalink }}">
+                            <img alt="portfolio thumb" src="https://slickteam.fr/wp-content/themes/hashone/images/portfolio-thumb.png"/>
+                        </a>
+                    </div>
 
-                <div class="hs-blog-excerpt">
-                    <h5><a href="{{ .Permalink }}">{{ .Title }}</a></h5>
-                    {{ .Params.abstract }}
+                    <div class="hs-blog-excerpt">
+                        <h5><a href="{{ .Permalink }}">{{ .Title }}</a></h5>
+                        {{ .Params.abstract }}
+                    </div>
                 </div>
-            </div>
+            {{ end }}    
+        {{ else }}
+        <div class="hs-section-tagline-white wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.5s">Il n'y a actuellement aucune offre en cours</div>
         {{ end }}
         </div>
     </div>

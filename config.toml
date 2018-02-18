@@ -1,4 +1,4 @@
-baseURL = "https://www.slickteam.fr/"
+BaseURL = "https://www.slickteam.fr/"
 defaultContentLanguage = "fr"
 languageCode = "fr-fr"
 title = "Slickteam - Come as you geek !"
