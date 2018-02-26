@@ -1,0 +1,27 @@
+<section id="hs-team-section" class="hs-section" align="center">
+    <div class="hs-container" align="center">
+        <h2 class="hs-section-title">Rencontrez nous</h2>        
+        <div class="hs-section-tagline">Des experts à votre service</div>    
+        <div class="hs-team-member-wrap" align="center">
+            {{ $staffCount := len (where .Data.Pages "Section" "staff") }}
+            {{ if gt $staffCount 0 }}
+                {{ range where .Data.Pages "Section" "staff" }}
+            <div class="hs-team-member">
+                <div class="hs-team-member-image">
+                    <img src="{{ .Site.BaseURL }}/images/staff/{{ .Params.Picture }}" alt="" />
+                    <div class="hs-team-social-id">
+                        {{ with .Params.facebook }}<a target="_blank" href="{{ . }}"><i class="fa fa-facebook"></i></a>{{ end }}
+                        {{ with .Params.twitter }}<a target="_blank" href="{{ . }}"><i class="fa fa-twitter"></i></a>{{ end }}
+                        {{ with .Params.linkedin }}<a target="_blank" href="{{ . }}"><i class="fa fa-linkedin"></i></a>{{ end }}
+                    </div>
+                </div>             
+                <h6>{{ .Params.title }}</h6>                
+                <div class="hs-team-designation">{{ .Params.position }}</div>                
+            </div>
+                {{ end }}
+            {{ else }}
+                <div class="hs-section-tagline-white wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.5s">Il n'y a pas encore d'expert dans le personnel</div>
+            {{ end }}
+        </div>
+    </div>
+</section>
