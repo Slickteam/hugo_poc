@@ -18,6 +18,11 @@ theme = "slickteam"
     instagram = ""
     github = "https://github.com/Slickteam"
 
+  [params.contact]
+    address = "1, square René Cassin, Rennes"
+    phone = "+33 6 72 47 75 78"
+    email = "contact@slickteam.fr"
+
   [params.facts]
     coffees = 1583
     post_it = 840
