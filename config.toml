@@ -17,3 +17,9 @@ theme = "slickteam"
     youtube = ""
     instagram = ""
     github = "https://github.com/Slickteam"
+
+  [params.facts]
+    coffees = 1583
+    post_it = 840
+    workshops = 234
+    music = 528
