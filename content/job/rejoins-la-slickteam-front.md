@@ -1,6 +1,8 @@
 ---
 date: 2017-04-09T10:58:08-04:00
 title: Rejoins la Slickteam Front !
+image: job-front.png
+img_position: right
 abstract: "Envie d’une nouvelle aventure web ? Faire du dev front et continuer à geeker et à progresser, tu es au bon endroit !"
 ---
 

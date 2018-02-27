@@ -1,6 +1,8 @@
 ---
 date: 2017-04-09T10:58:08-04:00
 title: La Slickteam OO recrute !
+image: job-oo.png
+img_position: right
 abstract: "Progresser et rester au top, cela t’intéresse ? Slickteam : du temps dédié à faire de la R&D : geeker, se former et progresser pour être affuté(e). Tu souhaites mettre à profit ton expérience en dev, viens nous rencontrer."
 ---
 

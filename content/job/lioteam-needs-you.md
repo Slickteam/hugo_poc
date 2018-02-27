@@ -1,6 +1,8 @@
 ---
 date: 2017-04-09T10:58:08-04:00
 title: L'IOTeam needs you !
+image: job-iot.png
+img_position: left
 abstract: "Intégrer Slickteam c'est avoir du temps pour geeker et progresser. Intervenir sur la chaîne M2M et surtout sur les objets connectés c'est possible !"
 ---
 
