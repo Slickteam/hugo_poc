@@ -34,23 +34,24 @@
             padding: 0 !important;
         }
         </style>
-        <link rel='stylesheet' id='jquery-bxslider-css'  href='https://slickteam.fr/wp-content/themes/hashone/css/jquery.bxslider.css?ver=4.1.2' type='text/css' media='all' />
-        <link rel='stylesheet' id='animate-css'  href='https://slickteam.fr/wp-content/themes/hashone/css/animate.css?ver=1.0' type='text/css' media='all' />
-        <link rel='stylesheet' id='font-awesome-css'  href='/css/font-awesome.css?ver=4.4.0' type='text/css' media='all' />
-        <link rel='stylesheet' id='owl-carousel-css'  href='https://slickteam.fr/wp-content/themes/hashone/css/owl.carousel.css?ver=1.3.3' type='text/css' media='all' />
-        <link rel='stylesheet' id='owl-theme-css'  href='https://slickteam.fr/wp-content/themes/hashone/css/owl.theme.css?ver=1.3.3' type='text/css' media='all' />
-        <link rel='stylesheet' id='nivo-lightbox-css'  href='https://slickteam.fr/wp-content/themes/hashone/css/nivo-lightbox.css?ver=1.3.3' type='text/css' media='all' />
-        <link rel='stylesheet' id='hashone-style-css'  href='https://slickteam.fr/wp-content/themes/hashone/style.css?ver=1.0' type='text/css' media='all' />
-        <link rel='stylesheet' id='hashone-fonts-css'  href='//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700|Roboto+Condensed:300italic,400italic,700italic,400,300,700&#038;subset=latin,latin-ext' type='text/css' media='all' />
-        <script type='text/javascript' src='https://slickteam.fr/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
-        <script type='text/javascript' src='https://slickteam.fr/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
-        <link rel='https://api.w.org/' href='https://slickteam.fr/wp-json/' />
+        <link rel='stylesheet' id='jquery-bxslider-css' href='{{ .Site.BaseURL }}css/jquery.bxslider.css?ver=4.1.2' type='text/css' media='all' />
+        <link rel='stylesheet' id='animate-css' href='{{ .Site.BaseURL }}css/animate.css?ver=1.0' type='text/css' media='all' />
+        <link rel='stylesheet' id='font-awesome-css' href='{{ .Site.BaseURL }}css/font-awesome.css?ver=4.4.0' type='text/css' media='all' />
+        <link rel='stylesheet' id='owl-carousel-css' href='{{ .Site.BaseURL }}css/owl.carousel.css?ver=1.3.3' type='text/css' media='all' />
+        <link rel='stylesheet' id='owl-theme-css' href='{{ .Site.BaseURL }}css/owl.theme.css?ver=1.3.3' type='text/css' media='all' />
+        <link rel='stylesheet' id='nivo-lightbox-css' href='{{ .Site.BaseURL }}css/nivo-lightbox.css?ver=1.3.3' type='text/css' media='all' />
+        <link rel='stylesheet' id='hashone-style-css' href='{{ .Site.BaseURL }}css/style.css?ver=1.0' type='text/css' media='all' />
+        <link rel='stylesheet' id='hashone-fonts-css' href='//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700|Roboto+Condensed:300italic,400italic,700italic,400,300,700&#038;subset=latin,latin-ext' type='text/css' media='all' />
+        <script type='text/javascript' src='{{ .Site.BaseURL }}js/jquery/jquery.js?ver=1.12.4'></script>
+        <script type='text/javascript' src='{{ .Site.BaseURL }}js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+        <!--<link rel='https://api.w.org/' href='https://slickteam.fr/wp-json/' />
         <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://slickteam.fr/xmlrpc.php?rsd" />
-        <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://slickteam.fr/wp-includes/wlwmanifest.xml" /> 
-        <style>.hs-main-header{background-image: url()}.hs-service-left-bg{ background-image:url(http://slickteam.fr/wp-content/uploads/2017/02/blur-1867748_1280.jpg.jpeg);}#hs-counter-section{ background-image:url(http://slickteam.fr/wp-content/uploads/2017/01/Coffee-1800-400.jpg);}#hs-contact-section{ background-image:url(http://slickteam.fr/wp-content/uploads/2017/02/Adress-Book.png);}</style><link rel="icon" href="https://slickteam.fr/wp-content/uploads/2017/01/cropped-SLICKTEAM-GRAPHISME-2-32x32.png" sizes="32x32" />
-        <link rel="icon" href="https://slickteam.fr/wp-content/uploads/2017/01/cropped-SLICKTEAM-GRAPHISME-2-192x192.png" sizes="192x192" />
-        <link rel="apple-touch-icon-precomposed" href="https://slickteam.fr/wp-content/uploads/2017/01/cropped-SLICKTEAM-GRAPHISME-2-180x180.png" />
-        <meta name="msapplication-TileImage" content="https://slickteam.fr/wp-content/uploads/2017/01/cropped-SLICKTEAM-GRAPHISME-2-270x270.png" />
+        <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://slickteam.fr/wp-includes/wlwmanifest.xml" /> -->
+        <style>.hs-main-header{background-image: url()}.hs-service-left-bg{ background-image:url(http://slickteam.fr/wp-content/uploads/2017/02/blur-1867748_1280.jpg.jpeg);}#hs-counter-section{ background-image:url(http://slickteam.fr/wp-content/uploads/2017/01/Coffee-1800-400.jpg);}#hs-contact-section{ background-image:url(http://slickteam.fr/wp-content/uploads/2017/02/Adress-Book.png);}</style>
+        <link rel="icon" href="{{ .Site.BaseURL }}images/logo-32x32.png" sizes="32x32" />
+        <link rel="icon" href="{{ .Site.BaseURL }}images/logo-192x192.png" sizes="192x192" />
+        <link rel="apple-touch-icon-precomposed" href="{{ .Site.BaseURL }}images/logo-180x180.png" />
+        <meta name="msapplication-TileImage" content="{{ .Site.BaseURL }}images/logo-270x270.png" />
         <style type="text/css" id="wp-custom-css">
         /*
         Vous pouvez ajouter du CSS personnalisé ici.
@@ -76,18 +77,18 @@
         {{ block "footer" . }}{{ partial "footer.html" .}}{{ end }}
         </div><!-- #page -->
         <div id="hs-back-top" class="animated hs-hide"><i class="fa fa-angle-up"></i></div>
-        <script type='text/javascript' src='https://slickteam.fr/wp-content/themes/hashone/js/jquery.bxslider.js?ver=4.1.2'></script>
-        <script type='text/javascript' src='https://slickteam.fr/wp-content/themes/hashone/js/owl.carousel.js?ver=1.3.3'></script>
-        <script type='text/javascript' src='https://slickteam.fr/wp-includes/js/imagesloaded.min.js?ver=3.2.0'></script>
-        <script type='text/javascript' src='https://slickteam.fr/wp-content/themes/hashone/js/isotope.pkgd.js?ver=20150903'></script>
-        <script type='text/javascript' src='https://slickteam.fr/wp-content/themes/hashone/js/nivo-lightbox.js?ver=20150903'></script>
-        <script type='text/javascript' src='https://slickteam.fr/wp-content/themes/hashone/js/jquery.stellar.js?ver=20150903'></script>
-        <script type='text/javascript' src='https://slickteam.fr/wp-content/themes/hashone/js/wow.js?ver=20150903'></script>
-        <script type='text/javascript' src='https://slickteam.fr/wp-content/themes/hashone/js/odometer.js?ver=20150903'></script>
-        <script type='text/javascript' src='https://slickteam.fr/wp-content/themes/hashone/js/waypoint.js?ver=20150903'></script>
-        <script type='text/javascript' src='https://slickteam.fr/wp-content/themes/hashone/js/jquery.nav.js?ver=20161003'></script>
-        <script type='text/javascript' src='https://slickteam.fr/wp-content/themes/hashone/js/SmoothScroll.js?ver=20150903'></script>
-        <script type='text/javascript' src='https://slickteam.fr/wp-content/themes/hashone/js/hashone-custom.js?ver=20150903'></script>
-        <script type='text/javascript' src='https://slickteam.fr/wp-includes/js/wp-embed.min.js?ver=4.7.9'></script>
+        <script type='text/javascript' src='{{ .Site.BaseURL }}js/jquery.bxslider.js?ver=4.1.2'></script>
+        <script type='text/javascript' src='{{ .Site.BaseURL }}js/owl.carousel.js?ver=1.3.3'></script>
+        <script type='text/javascript' src='{{ .Site.BaseURL }}js/imagesloaded.min.js?ver=3.2.0'></script>
+        <script type='text/javascript' src='{{ .Site.BaseURL }}js/isotope.pkgd.js?ver=20150903'></script>
+        <script type='text/javascript' src='{{ .Site.BaseURL }}js/nivo-lightbox.js?ver=20150903'></script>
+        <script type='text/javascript' src='{{ .Site.BaseURL }}js/jquery.stellar.js?ver=20150903'></script>
+        <script type='text/javascript' src='{{ .Site.BaseURL }}js/wow.js?ver=20150903'></script>
+        <script type='text/javascript' src='{{ .Site.BaseURL }}js/odometer.js?ver=20150903'></script>
+        <script type='text/javascript' src='{{ .Site.BaseURL }}js/waypoint.js?ver=20150903'></script>
+        <script type='text/javascript' src='{{ .Site.BaseURL }}js/jquery.nav.js?ver=20161003'></script>
+        <script type='text/javascript' src='{{ .Site.BaseURL }}js/SmoothScroll.js?ver=20150903'></script>
+        <script type='text/javascript' src='{{ .Site.BaseURL }}js/hashone-custom.js?ver=20150903'></script>
+        <script type='text/javascript' src='{{ .Site.BaseURL }}js/wp-embed.min.js?ver=4.7.9'></script>
     </body>
 </html>
